@@ -913,7 +913,8 @@ def config(db, port, json_output):
                     peer_tor_data.append(peer_switch_value)
                     print_peer_tor.append(peer_tor_data)
                     click.echo(tabulate(print_peer_tor, headers=headers))
-                    headers = ['port', 'state', 'ipv4', 'ipv6', 'cable_type', 'soc_ipv4', 'soc_ipv6', 'prober_type', 'neighbor_mode']
+                    headers = ['port', 'state', 'ipv4', 'ipv6', 'cable_type', 'soc_ipv4', 'soc_ipv6', 'prober_type',
+                               'neighbor_mode']
                     click.echo(tabulate(print_data, headers=headers))
 
                     sys.exit(CONFIG_SUCCESSFUL)
@@ -961,7 +962,8 @@ def config(db, port, json_output):
             peer_tor_data.append(peer_switch_value)
             print_peer_tor.append(peer_tor_data)
             click.echo(tabulate(print_peer_tor, headers=headers))
-            headers = ['port', 'state', 'ipv4', 'ipv6', 'cable_type', 'soc_ipv4', 'soc_ipv6', 'prober_type', 'neighbor_mode']
+            headers = ['port', 'state', 'ipv4', 'ipv6', 'cable_type', 'soc_ipv4', 'soc_ipv6', 'prober_type',
+                       'neighbor_mode']
             click.echo(tabulate(print_data, headers=headers))
 
         sys.exit(CONFIG_SUCCESSFUL)
